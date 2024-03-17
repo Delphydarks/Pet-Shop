@@ -2,6 +2,13 @@ public class Dog {
     private String name;
     private int age;
     public int no_of_limbs=4;
+
+    // Add a constructor
+    Dog(String name, int age, int no_of_limbs){
+        this.name=name;
+        this.age= age;
+        this.no_of_limbs=no_of_limbs;
+    }
     
     public void setName(String name){
         this.name= name;

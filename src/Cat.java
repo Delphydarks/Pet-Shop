@@ -9,7 +9,13 @@ public class Cat {
 
     public int no_of_limbs = 4;
 
-   
+    // Add a constructor
+    Cat(String name, int age, int no_of_limbs, String gender){
+        this.name= name;
+        this.age = age;
+        this.no_of_limbs= no_of_limbs;
+        this.gender= gender;
+    }
 
    // // methods
 
@@ -22,6 +28,9 @@ public class Cat {
     }
     public void setBreed(String breed){
         this.breed = breed;
+    }
+    public void setGender(String gender){
+        this.gender = gender;
     }
 
 
@@ -36,6 +45,10 @@ public class Cat {
 
    public String getBreed(){
     return breed;
+   }
+
+   public String getGender(){
+    return gender;
    }
 
     public void hasAccident(){

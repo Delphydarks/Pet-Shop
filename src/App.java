@@ -2,34 +2,34 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, wELCOME to Pocky Petshop!");
 
-        Dog Azul = new Dog();
+        Dog Azul = new Dog("Zuki",3, 4);
         Azul.setName("Azul");
         Azul.setAge(2);
         // Azul.no_of_limbs = 3;
         System.out.println("Name: "+ Azul.getName()+ " Age: " + Azul.getAge() + " No. of Limbs: " + Azul.no_of_limbs); 
 
 
-        Dog Chip =new Dog();
+        Dog Chip =new Dog("Muncho",3,4);
         Chip.setName("Chip");
         Chip.setAge(3);
         Chip.hasAccident();
         Chip.hasAgeIncrease();
         System.out.println("Name: "+ Chip.getName()+ " Age: " + Chip.getAge() + " No. of Limbs: " + Chip.no_of_limbs);
 
-        Cat Ravi = new Cat();
+        Cat Ravi = new Cat("Poki",4,4,"male");
         Ravi.setName("Ravi");
         Ravi.setAge(2);
         // Ravi.no_of_whiskers=7;
         Ravi.hasAccident();
-        System.out.println("Name: "+ Ravi.getName()+ " Age: " + Ravi.getAge() + " No. of Limbs: " + Ravi.no_of_limbs + " No. of Whiskers: " + Ravi.no_of_whiskers); 
+        System.out.println("Name: "+ Ravi.getName()+ " Age: " + Ravi.getAge() + " No. of Limbs: " + Ravi.no_of_limbs + " No. of Whiskers: " + Ravi.no_of_whiskers + " Gender: "+ Ravi.getGender()); 
 
 
-        Cat Solstrale =new Cat();
+        Cat Solstrale =new Cat("Kapital",4,4,"female");
         Solstrale.setName("Solstrale");
         Solstrale.setAge(3);
         Solstrale.hasAccident();
         Solstrale.hasAgeIncrease();
-        System.out.println("Name: "+ Solstrale.getName()+ " Age: " + Solstrale.getAge() + " No. of Limbs: " + Solstrale.no_of_limbs);
+        System.out.println("Name: "+ Solstrale.getName()+ " Age: " + Solstrale.getAge() + " No. of Limbs: " + Solstrale.no_of_limbs + " Gender: "+ Solstrale.getGender());
 
         Fish Nimo = new Fish("Kimo", 6 ,"Baby SharkFish","male");
         Nimo.setName("Nimo");
